@@ -1,5 +1,15 @@
-# Sprint Challenge: Authentication - Dad Jokes
 
+Q1)What is the purpose of using sessions?
+Ans1)Sessions are a simple way to store data for individual users against a unique session ID. This can be used to persist state information between page requests. Session IDs are normally sent to the browser via session cookies and the ID is used to retrieve existing session data.A session is a way to store information (in variables) to be used across multiple pages. Unlike a cookie, the information is not stored on the users computer.
+Q2)What does bcrypt do to help us store passwords in a secure manner.
+Ans2)Bcrypt doesn't save the password of users as plaintext, rather it hashes the user password.Bcrypt has salts built-in to prevent rainbow table attacks.The Password hashing function implements salting both manual and automatically and has accumulative hashing rounds.      
+Having an algorithm that hashes the information multiple times (rounds) means an attacker needs to have the hash, know the algorithm used, and how many rounds were used to generate the hash in the first place.
+Q4)What does bcrypt do to slow down attackers?
+Ans)bcrypt add time to our security algorithm to produce what is known as a Key Derivation Function.
+[Hash] + [Time] = [Key Derivation Function].
+QWhat are the three parts of the JSON Web Token?
+Headers,Payload and Signature
+# Sprint Challenge: Authentication - Dad Jokes
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Authentication. During this Sprint, you studied Introduction to Authentication, Using Sessions and Cookies, Using JSON Web Tokens (JWT), and Client-side Authentication. In your challenge this week, you will demonstrate proficiency by creating an application that will give you a list of random dad jokes, as long as you are authorized.
 
 - **DISCLAIMER** Authentication is a subject that many people spend a large amount time throughout their careers obtaining knowledge over. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent conversation about the subject.
